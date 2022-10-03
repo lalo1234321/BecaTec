@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">BecaTec</string>
+    <string-array name="Carreras">
+        <item>IngSistemasComputacionales</item>
+        <item>IngQuimica</item>
+        <item>IngIndustrial</item>
+        <item>IngLogistica</item>
+        <item>IngMecatronica</item>
+        <item>IngElectronica</item>
+        <item>IngTICS</item>
+        <item>IngGestionEmpresarial</item>
+    </string-array>
 </resources>
