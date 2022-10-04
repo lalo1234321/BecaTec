@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">BecaTec</string>
+
+    <string-array name="Carreras">
+        <item>IngSistemasComputacionales</item>
+        <item>IngQuimica</item>
+        <item>IngIndustrial</item>
+        <item>IngLogistica</item>
+        <item>IngMecatronica</item>
+        <item>IngElectronica</item>
+        <item>IngTICS</item>
+        <item>IngGestionEmpresarial</item>
+    </string-array>
+    <string-array name="Becas">
+        <item>Manutencion</item>
+        <item>ApoyoEconomico</item>
+        <item>Deportiva</item>
+        <item>DeIntercambio</item>
+        <item>Cultural</item>
+        <item>Movilidad</item>
+        <item>Investigación</item>
+        <item>Estudios</item>
+    </string-array>
+
+    <string name="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates consequuntur, delectus, rem ullam quod veritatis itaque sunt iste, sit error ea quaerat natus voluptatem. Reiciendis praesentium illo fugiat laboriosam cumque!</string>
+
 </resources>
