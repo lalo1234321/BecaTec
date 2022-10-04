@@ -10,4 +10,14 @@
         <item>IngTICS</item>
         <item>IngGestionEmpresarial</item>
     </string-array>
+    <string-array name="Becas">
+        <item>Manutencion</item>
+        <item>ApoyoEconomico</item>
+        <item>Deportiva</item>
+        <item>DeIntercambio</item>
+        <item>Cultural</item>
+        <item>Movilidad</item>
+        <item>Investigación</item>
+        <item>Estudios</item>
+    </string-array>
 </resources>
