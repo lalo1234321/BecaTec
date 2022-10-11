@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">BecaTec</string>
-<<<<<<< HEAD
 
     <string-array name="Carreras">
         <item>IngSistemasComputacionales</item>
@@ -25,7 +24,4 @@
 
     <string name="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates consequuntur, delectus, rem ullam quod veritatis itaque sunt iste, sit error ea quaerat natus voluptatem. Reiciendis praesentium illo fugiat laboriosam cumque!</string>
 
-=======
-    <string name="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates consequuntur, delectus, rem ullam quod veritatis itaque sunt iste, sit error ea quaerat natus voluptatem. Reiciendis praesentium illo fugiat laboriosam cumque!</string>
->>>>>>> remotes/origin/BEC-14-PantallaInicio1
 </resources>
