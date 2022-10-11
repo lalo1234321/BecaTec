@@ -13,11 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BecaTec"
         tools:targetApi="31">
-<<<<<<< HEAD
 
-        <activity
-            android:name=".Search_Results"
-=======
         <activity
             android:name=".InicioCarreras"
             android:exported="false">
@@ -27,7 +23,6 @@
         </activity>
         <activity
             android:name=".Login"
->>>>>>> remotes/origin/BEC-12-LOGIN
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
