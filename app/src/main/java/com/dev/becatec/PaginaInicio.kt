@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_pagina_inicio.*
 class PaginaInicio : AppCompatActivity() {
 
     val carreraslista = arrayOf("Ingenierias","Electronica","Gestion Empresarial","Industrial","Logistica","Mecatronica","Quimica","SistemasComputacionales","TICS")
-    val becas = arrayOf("Apoyo Economico","Manutencion","Estudios","Movilidad","Intercambio","Alojamiento")
+    val becas = arrayOf("Becas","Apoyo Economico","Manutencion","Estudios","Movilidad","Intercambio","Alojamiento")
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pagina_inicio)
