@@ -8,7 +8,7 @@
     tools:context=".Search_Results">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivEncabezado"
         android:layout_width="411dp"
         android:layout_height="67dp"
         android:layout_marginTop="4dp"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="¡BecaTec!"
+        android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="34sp"
@@ -31,7 +31,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/ivEncabezado" />
 
     <TextView
         android:id="@+id/textView7"
@@ -73,10 +73,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/tvBecaDesc" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/tvRequisitos"
         android:layout_width="303dp"
         android:layout_height="134dp"
         android:layout_marginTop="20dp"
@@ -90,7 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/tvBecaDesc"
         android:layout_width="300dp"
         android:layout_height="130dp"
         android:layout_marginTop="20dp"
@@ -104,7 +104,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnVisitSite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_borders"
@@ -114,7 +114,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/tvRequisitos" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

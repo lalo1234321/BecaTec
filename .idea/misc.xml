@@ -4,10 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Documentos/Becatec/BecaTec/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Documentos/Becatec/BecaTec/app/src/main/res/layout/activity_main.xml" value="0.18645833333333334" />
         <entry key="..\:/Documentos/Becatec/BecaTec/app/src/main/res/layout/activity_pagina_inicio.xml" value="0.23489583333333333" />
-        <entry key="..\:/Documentos/Becatec/BecaTec/app/src/main/res/layout/activity_resultados_bd.xml" value="0.300561797752809" />
+        <entry key="..\:/Documentos/Becatec/BecaTec/app/src/main/res/layout/activity_resultados_bd.xml" value="0.33" />
         <entry key="..\:/Documentos/Becatec/BecaTec/app/src/main/res/layout/activity_search_results.xml" value="0.20018115942028986" />
-        <entry key="..\:/Documentos/Becatec/BecaTec/app/src/main/res/layout/item_beca.xml" value="0.13677536231884058" />
+        <entry key="..\:/Documentos/Becatec/BecaTec/app/src/main/res/layout/item_beca.xml" value="0.5" />
         <entry key="..\:/Enchiladas verdes/Becatec/BecaTec/app/src/main/res/layout/activity_pagina_inicio.xml" value="0.25" />
         <entry key="..\:/Enchiladas verdes/Becatec/BecaTec/app/src/main/res/layout/activity_register.xml" value="0.17481884057971014" />
         <entry key="..\:/Enchiladas verdes/Becatec/BecaTec/app/src/main/res/layout/activity_search_results.xml" value="0.10677083333333333" />
