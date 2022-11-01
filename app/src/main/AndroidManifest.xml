@@ -23,6 +23,14 @@
         </activity>
 
         <activity
+            android:name=".NuevaBeca"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
             android:name=".ResultadosBD"
             android:exported="true">
             <intent-filter>
