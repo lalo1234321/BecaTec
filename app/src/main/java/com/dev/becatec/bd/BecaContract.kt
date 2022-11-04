@@ -7,9 +7,13 @@ class BecaContract {
         val VERSION = 1
         class Entrada:BaseColumns{
             companion object{
-                val TABLE_NAME = "Beca"
+                val TABLE_NAME = "Becas"
                 val COLUMN_ID = "id"
-                val COLUMN_NAME = "name"
+                val COLUMN_INSTITUCION = "institucion"
+                val COLUMN_DESC = "desc"
+                val COLUMN_IMAGE = "image"
+                val COLUMN_status = "status"
+                val COLUMN_URL = "url"
             }
         }
     }

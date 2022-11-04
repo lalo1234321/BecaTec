@@ -23,7 +23,7 @@
         </activity>
 
         <activity
-            android:name=".NuevaBeca"
+            android:name=".ResultadosBD"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -31,7 +31,7 @@
         </activity>
 
         <activity
-            android:name=".ResultadosBD"
+            android:name=".NuevaBeca"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

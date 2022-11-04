@@ -15,6 +15,7 @@ class NuevaBeca:AppCompatActivity() {
         setContentView(R.layout.activity_insertar_beca)
         var id = findViewById<EditText>(R.id.etId)
         var institucion = findViewById<EditText>(R.id.etInstitucion)
+        var desc = findViewById<EditText>(R.id.etDesc)
         var bAgregar = findViewById<Button>(R.id.bInsertar)
 
         crud = BecaCrud(this)
@@ -25,8 +26,8 @@ class NuevaBeca:AppCompatActivity() {
                 Becas(
                     id.text.toString().toInt(),
                     institucion.text.toString(),
-                    "Beca Manutencion",
-                    "https://rinacional.tecnm.mx/retrieve/c0721389-bb57-49fd-ad75-9be56bbed922",
+                    desc.text.toString(),
+                    "https://www.nj.com/resizer/mg42jsVYwvbHKUUFQzpw6gyKmBg=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.nj.com/home/njo-media/width2048/img/somerset_impact/photo/sm0212petjpg-7a377c1c93f64d37.jpg",
                     "active",
                     "www.ITTol.com"
                 )
