@@ -18,6 +18,7 @@ class DataBaseHelper(context:Context):SQLiteOpenHelper(context, BecaContract.Com
     }
     override fun onCreate(db: SQLiteDatabase?) {
         db?.execSQL(CREATE_BECA_TABLE)
+
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
