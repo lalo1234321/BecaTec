@@ -19,7 +19,7 @@ class BecaViewHolder(view: View):RecyclerView.ViewHolder(view){
 
     fun render(becaModel: Becas, onClickListener: (Becas)->Unit){
         binding.tvInsititucion.text = becaModel.institucion
-        binding.tvDesc.text = becaModel.desc
+        binding.tvDesc.text = becaModel.beca_nombre
         Glide.with(binding.imvBeca.context).load(becaModel.image).into(binding.imvBeca)
         itemView.setOnClickListener{onClickListener(becaModel)}
     }

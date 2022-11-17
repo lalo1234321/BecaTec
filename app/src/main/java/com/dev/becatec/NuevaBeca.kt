@@ -22,7 +22,7 @@ class NuevaBeca:AppCompatActivity() {
         bAgregar.setOnClickListener{
             print("comiendo")
             println(id.text.toString().toInt())
-            crud?.newBeca(
+           /* crud?.newBeca(
                 Becas(
                     id.text.toString().toInt(),
                     institucion.text.toString(),
@@ -31,7 +31,7 @@ class NuevaBeca:AppCompatActivity() {
                     "active",
                     "www.ITTol.com"
                 )
-            )
+            )*/
             startActivity(Intent(this, ResultadosBD::class.java))
         }
     }

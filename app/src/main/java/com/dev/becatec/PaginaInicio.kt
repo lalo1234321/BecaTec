@@ -1,10 +1,12 @@
 package com.dev.becatec
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_pagina_inicio.*
 
@@ -13,9 +15,13 @@ class PaginaInicio : AppCompatActivity() {
 
     val carreraslista = arrayOf("Ingenierias","Electronica","Gestion Empresarial","Industrial","Logistica","Mecatronica","Quimica","SistemasComputacionales","TICS")
     val becas = arrayOf("Becas","Apoyo Economico","Manutencion","Estudios","Movilidad","Intercambio","Alojamiento")
+    var correoIntent : String = ""
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pagina_inicio)
+        val intent = getIntent();
+        correoIntent = intent?.getStringExtra("correo")!!
+        println("Obtenido desde el login ${correoIntent}")
        val adapter = ArrayAdapter(this,android.R.layout.simple_spinner_item,carreraslista)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_item)
         carreras1.adapter = adapter
@@ -57,6 +63,10 @@ class PaginaInicio : AppCompatActivity() {
                 }
             }
         }
+        val bBuscar = findViewById<Button>(R.id.bBuscar2)
+        bBuscar.setOnClickListener {
+            startActivity(Intent(this, ResultadosBD::class.java))
+        }
     }
     private fun condition1(){
         Toast.makeText(this, "selected Item"+carreras1.selectedItem, Toast.LENGTH_LONG).show()
@@ -76,5 +86,6 @@ class PaginaInicio : AppCompatActivity() {
     private fun condition6(){
         Toast.makeText(this, "cheked Item", Toast.LENGTH_LONG).show()
     }
+
 
 }

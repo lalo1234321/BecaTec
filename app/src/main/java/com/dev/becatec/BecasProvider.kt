@@ -4,7 +4,7 @@ import com.dev.becatec.Becas
 
 class BecasProvider {
     companion object{
-        val becaList = arrayListOf<Becas>(
+       /* val becaList = arrayListOf<Becas>(
             Becas(
                 1,
                 "Santander",
@@ -118,7 +118,7 @@ class BecasProvider {
                 "www.santander.com"
             )
 
-        )
+        )*/
         //Becas(id=1, institucion=Santander, desc=Beca Manutencion, image=https://www.santander.com/content/dam/santander-com/images/image-resources/san-logo.png, status=active, url=www.santander.com)
     }
 }
