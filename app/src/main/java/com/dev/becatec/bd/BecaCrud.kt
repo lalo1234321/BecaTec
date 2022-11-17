@@ -16,6 +16,7 @@ class BecaCrud(context:Context) {
 
    fun newBeca(item:Becas) {
 
+
         //abrir conexión a base de datos en modo lectura
         val db: SQLiteDatabase = helper?.writableDatabase!!
         //mapea de columnas a insertar
