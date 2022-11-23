@@ -1,11 +1,9 @@
 package com.dev.becatec.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.dev.becatec.Becas
-import com.dev.becatec.BecasProvider
 import com.dev.becatec.R
 
 class BecaAdapter(private val becaList:ArrayList<Becas>, private  val onClickListener: (Becas)->Unit) : RecyclerView.Adapter<BecaViewHolder>(){

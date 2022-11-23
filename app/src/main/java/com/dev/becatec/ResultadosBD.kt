@@ -28,14 +28,6 @@ class ResultadosBD : AppCompatActivity() {
         becas = crud!!.getBecas()
         val manager = LinearLayoutManager(this)
         val divider = DividerItemDecoration(this, manager.orientation)
-        /*var resultados:List<Becas> = listOf(Becas(
-            10,
-            "Santander",
-            "Beca Manutencion",
-            "https://www.santander.com/content/dam/santander-com/images/image-resources/san-logo.png",
-            "active",
-            "www.santander.com"
-        ))*/
 
         println("Obteniendo becas")
         binding.recyclerPrueba.layoutManager = LinearLayoutManager(this)

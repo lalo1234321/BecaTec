@@ -11,8 +11,10 @@ class DataBaseHelper(context:Context):SQLiteOpenHelper(context, BecaContract.Com
     companion object {
         val CREATE_BECA_TABLE = "CREATE TABLE " + BecaContract.Companion.Entrada.TABLE_NAME +" (" + BecaContract.Companion.Entrada.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 BecaContract.Companion.Entrada.COLUMN_INSTITUCION +" TEXT, " +
+                ""+BecaContract.Companion.Entrada.COLUMN_ING+" TEXT, "+
                 ""+BecaContract.Companion.Entrada.COLUMN_NOMBRE_BECA+" TEXT, "+
                 ""+BecaContract.Companion.Entrada.COLUMN_DESC+" TEXT, " +
+                ""+BecaContract.Companion.Entrada.COLUMN_REQUISITOS+" TEXT, "+
                 ""+BecaContract.Companion.Entrada.COLUMN_URL +" TEXT, " +
                 ""+BecaContract.Companion.Entrada.COLUMN_IMAGE +" TEXT, " +
                 ""+BecaContract.Companion.Entrada.COLUMN_status +" TEXT )"
