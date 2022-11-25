@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Documentos/Becatec/BecaTec/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Documentos/Becatec/BecaTec/app/src/main/res/layout/activity_login.xml" value="0.18" />
         <entry key="..\:/Documentos/Becatec/BecaTec/app/src/main/res/layout/activity_main.xml" value="0.18645833333333334" />
         <entry key="..\:/Documentos/Becatec/BecaTec/app/src/main/res/layout/activity_pagina_inicio.xml" value="0.23489583333333333" />
+        <entry key="..\:/Documentos/Becatec/BecaTec/app/src/main/res/layout/activity_register.xml" value="0.33" />
         <entry key="..\:/Documentos/Becatec/BecaTec/app/src/main/res/layout/activity_resultados_bd.xml" value="0.33" />
         <entry key="..\:/Documentos/Becatec/BecaTec/app/src/main/res/layout/activity_search_results.xml" value="0.20018115942028986" />
         <entry key="..\:/Documentos/Becatec/BecaTec/app/src/main/res/layout/item_beca.xml" value="0.5" />

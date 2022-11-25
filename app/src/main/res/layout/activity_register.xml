@@ -36,38 +36,25 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="36dp"
         android:text="Correo institucional"
-        android:textColor="@color/black"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Contraseña"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
-
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/etEmailAddress"
         android:layout_width="228dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="28dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
         android:autoText="false"
         android:background="@color/cardview_light_background"
         android:ems="10"
+        android:hint="Correo"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -78,23 +65,24 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
         android:text="Repetir contraseña"
-        android:textColor="@color/black"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="228dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="28dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
         android:background="@color/white"
         android:ems="10"
+        android:hint="Contraseña"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -104,22 +92,22 @@
     <EditText
         android:id="@+id/editTextTextPassword2"
         android:layout_width="228dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="28dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
         android:background="@color/white"
         android:ems="10"
+        android:hint="Confirmar Contraseña"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.134" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="279dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="28dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:text="Acepto términos y condiciones"
         android:textColor="@color/purple_700"
         android:textSize="16sp"
@@ -128,10 +116,10 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnRegister"
         android:layout_width="122dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="28dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
         android:background="@color/background_button"
         android:drawableLeft="@android:drawable/ic_menu_search"
         android:text="Registrar"
@@ -142,5 +130,19 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Contraseña"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailAddress" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,22 +1,42 @@
 package com.dev.becatec
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.dev.becatec.databinding.ActivityResultadosBdBinding
 import com.dev.becatec.databinding.ActivitySearchResultsBinding
+import kotlinx.android.synthetic.main.activity_search_results.*
 
 class Search_Results : AppCompatActivity() {
     private lateinit var binding: ActivitySearchResultsBinding
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySearchResultsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         val extras = intent.extras
-        val s = extras?.getString("url")?:"sin usuario"
-        Toast.makeText(this, s, Toast.LENGTH_SHORT).show()
+        val page = extras?.getString("url")?:"sin url"
+        val institucion = extras?.getString("institucion")?:"Sin institucion"
+        val beca_nombre = extras?.getString("becaNombre")?:"Beca sin nombre"
+        val desc = extras?.getString("desc")?:"Sin descripcion"
+        putContent(desc,beca_nombre)
+        btnVisitSite.setOnClickListener { visitPage(page) }
+    }
+
+    fun putContent(desc:String, beca_nombre:String){
+        tvBecaDesc.text = desc
+        tvRequisitos.text = desc
+        tvNombreBeca.text = beca_nombre
+    }
+
+    fun visitPage(page:String){
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.setData(Uri.parse(page))
+        startActivity(intent)
     }
 
 

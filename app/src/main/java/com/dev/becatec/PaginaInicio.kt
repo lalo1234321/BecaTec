@@ -19,9 +19,7 @@ class PaginaInicio : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pagina_inicio)
-        val intent = getIntent();
-        correoIntent = intent?.getStringExtra("correo")!!
-        println("Obtenido desde el login ${correoIntent}")
+
        val adapter = ArrayAdapter(this,android.R.layout.simple_spinner_item,carreraslista)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_item)
         carreras1.adapter = adapter
