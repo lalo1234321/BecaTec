@@ -19,17 +19,24 @@ class DataBaseHelper(context:Context):SQLiteOpenHelper(context, BecaContract.Com
                 ""+BecaContract.Companion.Entrada.COLUMN_IMAGE +" TEXT, " +
                 ""+BecaContract.Companion.Entrada.COLUMN_status +" TEXT )"
 
-        val REMOVE_BECA_TABLE = "DROP TABLE IF EXISTS "+BecaContract.Companion.Entrada.TABLE_NAME
+        val CREATE_USER_TABLE = "CREATE TABLE " + UserContract.Companion.Entrada.TABLE_NAME +" (" + UserContract.Companion.Entrada.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                UserContract.Companion.Entrada.COLUMN_EMAIL +" TEXT, " +
+                ""+UserContract.Companion.Entrada.COLUMN_PASSWORD+" TEXT )"
 
+
+        val REMOVE_BECA_TABLE = "DROP TABLE IF EXISTS "+BecaContract.Companion.Entrada.TABLE_NAME
+        val REMOVE_USER_TABLE = "DROP TABLE IF EXISTS "+UserContract.Companion.Entrada.TABLE_NAME
     }
 
     override fun onCreate(db: SQLiteDatabase?) {
         db?.execSQL(CREATE_BECA_TABLE)
+        db?.execSQL(CREATE_USER_TABLE)
     }
 
 
    override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         db?.execSQL(REMOVE_BECA_TABLE)
+        db?.execSQL(REMOVE_USER_TABLE)
         onCreate(db)
     }
 

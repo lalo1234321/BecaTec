@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ivEncabezado" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/tvNombreBeca"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -60,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreBeca" />
 
     <TextView
         android:id="@+id/textView10"
@@ -106,7 +106,7 @@
     <Button
         android:id="@+id/btnVisitSite"
         android:layout_width="122dp"
-        android:layout_height="33dp"
+        android:layout_height="48dp"
         android:layout_marginTop="28dp"
         android:background="@color/background_button"
         android:text="Ir a beca"
