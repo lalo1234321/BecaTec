@@ -36,7 +36,6 @@ class Login : AppCompatActivity() {
             be_crud?.insertarBecas()
             println("ejecutado dentro de la validacion")
         }
-
     }
 
     fun goRegisterUser(){
@@ -47,7 +46,7 @@ class Login : AppCompatActivity() {
         correo = binding.editTextTextEmailAddress.text.toString()
         contrasenia = binding.editTextTextPassword3.text.toString()
         if (validUser()){
-            goRegisterUser()
+            startActivity(Intent(this,PaginaInicio::class.java))
         }else{
             showLoginError()
         }
