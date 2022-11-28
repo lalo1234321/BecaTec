@@ -23,9 +23,9 @@ class UserCrud(context:Context) {
         values.put(UserContract.Companion.Entrada.COLUMN_PASSWORD,item.password)
         db.close()
     }
-    val dab:SQLiteDatabase = helper?.writableDatabase!!
 
     fun insertUser(email:String, password:String){
+        val dab:SQLiteDatabase = helper?.writableDatabase!!
         val value = ContentValues().apply {
             put(UserContract.Companion.Entrada.COLUMN_EMAIL,email)
             put(UserContract.Companion.Entrada.COLUMN_PASSWORD,password)
@@ -35,11 +35,13 @@ class UserCrud(context:Context) {
     }
 
     fun checkEmpty():Boolean{
+        val dab:SQLiteDatabase = helper?.writableDatabase!!
         val tabla:String = UserContract.Companion.Entrada.TABLE_NAME
         return DatabaseUtils.queryNumEntries(dab,tabla) ==0L
     }
 
     fun getUser(email: String):ArrayList<Users> {
+
         var items:ArrayList<Users> = ArrayList()
         val db:SQLiteDatabase = helper?.readableDatabase!!
 
@@ -60,7 +62,6 @@ class UserCrud(context:Context) {
             null,
             null
         )
-
         //Realizar recorrido del cursor en la tabla
         while( c.moveToNext() ) {
             val user_id = c.getInt(c.getColumnIndexOrThrow(UserContract.Companion.Entrada.COLUMN_ID))
@@ -72,9 +73,7 @@ class UserCrud(context:Context) {
                     user_id,user_mail,user_pass
                 ))
             }
-
         }
-
         //Cerrar conexión
         db.close()
         return items

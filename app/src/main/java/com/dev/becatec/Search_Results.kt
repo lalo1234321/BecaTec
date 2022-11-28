@@ -12,24 +12,22 @@ import kotlinx.android.synthetic.main.activity_search_results.*
 class Search_Results : AppCompatActivity() {
     private lateinit var binding: ActivitySearchResultsBinding
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySearchResultsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val extras = intent.extras
         val page = extras?.getString("url")?:"sin url"
-        val institucion = extras?.getString("institucion")?:"Sin institucion"
-        val beca_nombre = extras?.getString("becaNombre")?:"Beca sin nombre"
+        val requisitos = extras?.getString("requisitos")?:"Sin Requisitos"
+        val beca_nombre = extras?.getString("name")?:"Beca sin nombre"
         val desc = extras?.getString("desc")?:"Sin descripcion"
-        putContent(desc,beca_nombre)
+        putContent(desc,beca_nombre,requisitos)
         btnVisitSite.setOnClickListener { visitPage(page) }
     }
 
-    fun putContent(desc:String, beca_nombre:String){
+    fun putContent(desc:String, beca_nombre:String,requisitos:String){
         tvBecaDesc.text = desc
-        tvRequisitos.text = desc
+        tvRequisitos.text = requisitos
         tvNombreBeca.text = beca_nombre
     }
 

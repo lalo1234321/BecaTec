@@ -42,6 +42,9 @@ class ResultadosBD : AppCompatActivity() {
     fun onItemSelected(becas: Becas){
         val intent = Intent(this, Search_Results::class.java)
         intent.putExtra("url", becas.url)
+        intent.putExtra("requisitos",becas.requisitos)
+        intent.putExtra("desc", becas.desc)
+        intent.putExtra("name",becas.beca_nombre)
         startActivity(intent)
     }
 
