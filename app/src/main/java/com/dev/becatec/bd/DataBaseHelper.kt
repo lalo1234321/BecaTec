@@ -17,7 +17,7 @@ class DataBaseHelper(context:Context):SQLiteOpenHelper(context, BecaContract.Com
                 ""+BecaContract.Companion.Entrada.COLUMN_REQUISITOS+" TEXT, "+
                 ""+BecaContract.Companion.Entrada.COLUMN_URL +" TEXT, " +
                 ""+BecaContract.Companion.Entrada.COLUMN_IMAGE +" TEXT, " +
-                ""+BecaContract.Companion.Entrada.COLUMN_status +" TEXT )"
+                ""+BecaContract.Companion.Entrada.COLUMN_TIPO +" TEXT )"
 
         val CREATE_USER_TABLE = "CREATE TABLE " + UserContract.Companion.Entrada.TABLE_NAME +" (" + UserContract.Companion.Entrada.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 UserContract.Companion.Entrada.COLUMN_EMAIL +" TEXT, " +
