@@ -4,7 +4,7 @@ import android.provider.BaseColumns
 
 class BecaContract {
     companion object{
-        val VERSION = 1
+        val VERSION = 3
         class Entrada:BaseColumns{
             companion object{
                 val TABLE_NAME = "BecasV14"
@@ -15,7 +15,7 @@ class BecaContract {
                 val COLUMN_DESC = "desc"
                 val COLUMN_REQUISITOS="requisitos"
                 val COLUMN_IMAGE = "image"
-                val COLUMN_status = "status"
+                val COLUMN_TIPO = "tipo"
                 val COLUMN_URL = "url"
             }
         }
